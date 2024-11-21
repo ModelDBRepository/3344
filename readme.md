@@ -2,7 +2,7 @@ NEURON mod files for the I-A current from the paper:
 Beck H, Ficker E, Heinemann U.
 Properties of two voltage-activated potassium currents in 
 acutely isolated juvenile rat dentate gyrus granule cells.
-J. Neurophysiol. 68, 2086-2099 (1992)
+*J. Neurophysiol.* 68, 2086-2099 (1992)
 
 Running the kinetics.hoc simulation file will show 
 the activation and inactivation steady-states, the time constants, 
@@ -20,17 +20,23 @@ and activation kinetics have
 been adjusted to give a reasonable approximation of the
 voltage-clamp current traces in Figs.3A-3C.
  
-Under unix systems:
+## Under unix systems:
 to compile the mod files use the command 
-nrnivmodl 
+``` nrnivmodl ```
 and run the simulation hoc file with the command 
-nrngui kinetics.hoc
+``` nrngui kinetics.hoc```
 
-Under Windows using NEURON 5.1:
-to compile the mod files use the "mknrndll" command.
+## Under Windows using NEURON 5.1:
+to compile the mod files use the ``` mknrndll ``` command.
 A double click on the simulation file
 kinetics.hoc 
 will open the simulation window.
 
+\
 Questions on how to use this model should be directed to
 michele.migliore@pa.ibf.cnr.it
+
+
+Changelog:
+----------
+2024-10: Converted readme to markdown
